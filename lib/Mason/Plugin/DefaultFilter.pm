@@ -4,7 +4,7 @@ package Mason::Plugin::DefaultFilter;
 use Moose;
 with 'Mason::Plugin';
 
-our $VERSION = 0.001;# VERSION
+our $VERSION = 0.002;# VERSION
 
 1;
 
@@ -18,7 +18,7 @@ Mason::Plugin::DefaultFilter - Automatically apply filters to substitution tags
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
@@ -54,6 +54,14 @@ An array ref of filter names to apply by default.
 =back
 
 =head1 CAVEATS
+
+The author does not recommend the use of this plugin for any new Mason 2.x
+project. This is intended as a compatibility and convenience item for those
+converting from Mason 1.x to 2.x. Default filters create a lot of
+action-at-a-distance that will cause you more headache than you need down the
+road, and as such should probably be Considered Harmful. It is the author's
+opinion that Mason 2.x made the right choice in not retaining this option from
+1.x as core functionality.
 
 Currently this only works on substitution tags (<% $foo %>).  This is probably
 the only case where it's useful.

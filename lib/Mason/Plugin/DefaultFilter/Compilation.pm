@@ -2,7 +2,7 @@ package Mason::Plugin::DefaultFilter::Compilation;
 
 use Mason::PluginRole;
 
-our $VERSION = 0.001;# VERSION
+our $VERSION = 0.002;# VERSION
 
 around _handle_substitution => sub {
     my($orig,$self,$text,$filter_list) = @_;
