@@ -4,29 +4,29 @@ use warnings;
 
 
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Automatically apply filters to substitution tags',
-  'AUTHOR' => 'Stephen Clouse <stephenclouse@gmail.com>',
-  'BUILD_REQUIRES' => {
-    'Test::Class::Most' => '0'
+  "ABSTRACT" => "Automatically apply filters to substitution tags",
+  "AUTHOR" => "Stephen Clouse <stephenclouse\@gmail.com>",
+  "BUILD_REQUIRES" => {
+    "Test::Class::Most" => 0
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'Mason-Plugin-DefaultFilter',
-  'EXE_FILES' => [],
-  'LICENSE' => 'perl',
-  'NAME' => 'Mason::Plugin::DefaultFilter',
-  'PREREQ_PM' => {
-    'Mason' => '2.00'
+  "DISTNAME" => "Mason-Plugin-DefaultFilter",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "Mason::Plugin::DefaultFilter",
+  "PREREQ_PM" => {
+    "Mason" => "2.00"
   },
-  'VERSION' => '0.002',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.003",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 

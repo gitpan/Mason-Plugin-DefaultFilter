@@ -4,7 +4,7 @@ package Mason::Plugin::DefaultFilter;
 use Moose;
 with 'Mason::Plugin';
 
-our $VERSION = 0.002;# VERSION
+our $VERSION = '0.003'; # VERSION
 
 1;
 
@@ -18,7 +18,7 @@ Mason::Plugin::DefaultFilter - Automatically apply filters to substitution tags
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
